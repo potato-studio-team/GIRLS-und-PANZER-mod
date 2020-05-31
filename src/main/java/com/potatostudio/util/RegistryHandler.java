@@ -12,6 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 public class RegistryHandler {
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(ModeItems.obsidianingot);
+        event.getRegistry().register(ModeItems.AnKangYu);
     }
 }
