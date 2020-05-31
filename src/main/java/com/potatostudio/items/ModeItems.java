@@ -1,5 +1,5 @@
 package com.potatostudio.items;
 
 public class ModeItems {
-    public static AnKangYu AnKangYu = new AnKangYu();
+    public static Anglerfish Anglerfish = new Anglerfish();
 }
