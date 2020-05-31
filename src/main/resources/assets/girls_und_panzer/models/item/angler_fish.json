@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "girls_und_panzer:item/angler_fish"
+  }
+}
