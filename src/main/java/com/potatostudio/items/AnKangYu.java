@@ -5,7 +5,7 @@ import net.minecraftforge.common.ToolType;
 
 public class AnKangYu extends Item {
     public AnKangYu() {
-        super(new Properties().maxStackSize(1).addToolType(ToolType.PICKAXE,3));
+        super(new Properties().maxStackSize(1).addToolType(ToolType.PICKAXE,3).maxDamage(10));
         this.setRegistryName("ankang_yu");
     }
 }
