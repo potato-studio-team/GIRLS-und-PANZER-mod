@@ -1,7 +1,6 @@
 package com.potatostudio.util;
 
 import com.potatostudio.items.ModeItems;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +11,6 @@ import net.minecraftforge.fml.common.Mod;
 public class RegistryHandler {
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(ModeItems.AnKangYu);
+        event.getRegistry().register(ModeItems.Anglerfish);
     }
 }
