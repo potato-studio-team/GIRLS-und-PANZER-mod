@@ -1,4 +1,4 @@
-package com.potatostudio.blocks;
+package com.potatostudio.blocks.schoolOwnBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
