@@ -1,5 +1,6 @@
 package com.potatostudio.girls_und_panzer;
 
+import com.potatostudio.girls_und_panzer.setup.ModSetup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class girls_und_panzer
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
 
+    public static ModSetup setup = new ModSetup();
+
     public girls_und_panzer() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -34,5 +37,6 @@ public class girls_und_panzer
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        setup.init();
     }
 }
