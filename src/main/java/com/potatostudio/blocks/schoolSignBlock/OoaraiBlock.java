@@ -19,10 +19,4 @@ public class OoaraiBlock extends Block {
         );
     this.setRegistryName("ooarai_block");// 命名
     }
-
-//    方块状态
-    @Override
-    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.FACING, BlockStateProperties.POWERED);
-    }
 }
