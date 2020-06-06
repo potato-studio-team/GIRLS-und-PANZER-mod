@@ -1,4 +1,6 @@
 {
   "item.girls_und_panzer.angler_fish": "鮟鱇鱼",
-  "block.girls_und_panzer.ooarai_block": "大洗方块"
+
+  "block.girls_und_panzer.ooarai_block": "大洗方块",
+  "block.girls_und_panzer.tank_maker": "战车生成器"
 }
