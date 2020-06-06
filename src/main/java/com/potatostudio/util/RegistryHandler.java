@@ -18,9 +18,13 @@ public class RegistryHandler {
         event.getRegistry().register(new BlockItem(ModBlocks.ooaraiBlock, new Item.Properties())
                 .setRegistryName(ModBlocks.ooaraiBlock.getRegistryName())
         );
+        event.getRegistry().register(new BlockItem(ModBlocks.tankMaker, new Item.Properties())
+                .setRegistryName(ModBlocks.tankMaker.getRegistryName())
+        );
     }
     @SubscribeEvent
     public static void onBlockRegistry(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(ModBlocks.ooaraiBlock);
+        event.getRegistry().register(ModBlocks.tankMaker);
     }
 }
