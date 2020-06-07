@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "girls_und_panzer:block/tank_maker" }
+    "facing=north": { "model": "girls_und_panzer:block/tank_maker" },
+    "facing=south": { "model": "girls_und_panzer:block/tank_maker", "y": 180},
+    "facing=west": { "model": "girls_und_panzer:block/tank_maker", "y": 270},
+    "facing=east": { "model": "girls_und_panzer:block/tank_maker", "y": 90},
+    "facing=up": { "model": "girls_und_panzer:block/tank_maker", "x": -90},
+    "facing=down": { "model": "girls_und_panzer:block/tank_maker", "x": 90}
   }
 }

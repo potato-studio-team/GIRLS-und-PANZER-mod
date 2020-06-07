@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "GIG",
+    "III"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraf:glass"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "girls_und_panzer:tank_maker"
+  }
+}
