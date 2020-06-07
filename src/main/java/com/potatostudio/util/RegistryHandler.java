@@ -15,10 +15,10 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onItemsRegistry(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(ModeItems.Anglerfish);
-        event.getRegistry().register(new BlockItem(ModBlocks.ooaraiBlock, new Item.Properties())
+        event.getRegistry().register(new BlockItem(ModBlocks.ooaraiBlock, new Item.Properties().group(Utils.itemGroup))
                 .setRegistryName(ModBlocks.ooaraiBlock.getRegistryName())
         );
-        event.getRegistry().register(new BlockItem(ModBlocks.tankMaker, new Item.Properties())
+        event.getRegistry().register(new BlockItem(ModBlocks.tankMaker, new Item.Properties().group(Utils.itemGroup))
                 .setRegistryName(ModBlocks.tankMaker.getRegistryName())
         );
     }
