@@ -1,6 +1,9 @@
 package com.potatostudio.blocks.Tank.TankMaker;
 
 import javax.annotation.Nullable;
+
+import com.potatostudio.items.Anglerfish;
+import net.minecraft.block.AnvilBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -41,6 +44,14 @@ public class TankMaker extends Block {
         }
     }
 
+    //点击方块改变方向
+    @Override
+    public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
+        if (player != null) {
+            worldIn.setBlockState(pos,
+                    state.with(BlockStateProperties.FACING, getFacingFromEntity(pos, player)), 2);
+        }
+    }
 
     public static Direction getFacingFromEntity(BlockPos clickedBlock, LivingEntity entity) {
         Vec3d vec = entity.getPositionVec();
