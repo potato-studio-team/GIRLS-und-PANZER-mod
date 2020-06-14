@@ -1,27 +1,10 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "girls_und_panzer:block/ooarai_block"
-    },
-    "facing=south": {
-      "model": "girls_und_panzer:block/ooarai_block",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "girls_und_panzer:block/ooarai_block",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "girls_und_panzer:block/ooarai_block",
-      "y": 90
-    },
-    "facing=up": {
-      "model": "girls_und_panzer:block/ooarai_block",
-      "x": -90
-    },
-    "facing=down": {
-      "model": "girls_und_panzer:block/ooarai_block",
-      "x": 90
-    }
+    "facing=south": { "model": "girls_und_panzer:block/ooarai_block" },
+    "facing=north": { "model": "girls_und_panzer:block/ooarai_block", "y": 180},
+    "facing=east": { "model": "girls_und_panzer:block/ooarai_block", "y": 270},
+    "facing=west": { "model": "girls_und_panzer:block/ooarai_block", "y": 90},
+    "facing=up": { "model": "girls_und_panzer:block/ooarai_block", "x": -90},
+    "facing=down": { "model": "girls_und_panzer:block/ooarai_block", "x": 90}
   }
 }

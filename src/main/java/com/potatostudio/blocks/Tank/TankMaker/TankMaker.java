@@ -1,4 +1,4 @@
-package com.potatostudio.blocks.Tank;
+package com.potatostudio.blocks.Tank.TankMaker;
 
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
