@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
     "particle": "girls_und_panzer:block/tank_maker",
     "down": "girls_und_panzer:block/tank_maker_top",

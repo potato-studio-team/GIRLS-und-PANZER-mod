@@ -14,6 +14,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraftforge.registries.ObjectHolder;
 
 import javax.annotation.Nullable;
 
@@ -28,6 +29,10 @@ public class TankMaker extends Block {
         );
         this.setRegistryName("tank_maker");// 命名
     }
+
+    //方块功能
+
+    //方块放置自动方向
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
         if (placer != null) {
@@ -36,13 +41,6 @@ public class TankMaker extends Block {
         }
     }
 
-    @Override
-    public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
-        if (player != null) {
-            worldIn.setBlockState(pos,
-                    state.with(BlockStateProperties.FACING, getFacingFromEntity(pos, player)), 2);
-        }
-    }
 
     public static Direction getFacingFromEntity(BlockPos clickedBlock, LivingEntity entity) {
         Vec3d vec = entity.getPositionVec();
@@ -58,3 +56,4 @@ public class TankMaker extends Block {
         builder.add(BlockStateProperties.FACING);
     }
 }
+
