@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "girls_und_panzer:block/tank_maker"
+    "particle": "girls_und_panzer:block/tank_maker",
+    "down": "girls_und_panzer:block/tank_maker_top",
+    "up": "girls_und_panzer:block/tank_maker_top",
+    "east": "girls_und_panzer:block/tank_maker",
+    "west": "girls_und_panzer:block/tank_maker",
+    "north": "girls_und_panzer:block/tank_maker_face",
+    "south": "girls_und_panzer:block/tank_maker"
   }
 }
