@@ -1,9 +1,6 @@
-package com.potatostudio.blocks.Tank.TankMaker;
+package com.potatostudio.blocks.Tank;
 
-import javax.annotation.Nullable;
-
-import com.potatostudio.items.Anglerfish;
-import net.minecraft.block.AnvilBlock;
+import com.potatostudio.TileEntity.ModTileEntityType;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -13,11 +10,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateContainer.Builder;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
-import net.minecraftforge.registries.ObjectHolder;
 
 import javax.annotation.Nullable;
 
@@ -65,6 +63,18 @@ public class TankMaker extends Block {
     @Override
     protected void fillStateContainer(Builder<Block, BlockState> builder) {
         builder.add(BlockStateProperties.FACING);
+    }
+
+    // 方块实体关联
+    @Override
+    public boolean hasTileEntity(BlockState state) {
+        return true;
+    }
+
+    @Nullable
+    @Override
+    public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+        return ModTileEntityType.TankMakerTileEntityType.create();
     }
 }
 
