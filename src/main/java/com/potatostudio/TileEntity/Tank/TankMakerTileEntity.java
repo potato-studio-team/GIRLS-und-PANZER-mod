@@ -10,12 +10,14 @@ public class TankMakerTileEntity extends TileEntity {
     // 加值
     public int increase() {
         tankNum ++;
+        markDirty();
         return tankNum;
     }
 
     // 减值
     public int decrease() {
         tankNum --;
+        markDirty();
         return tankNum;
     }
 
